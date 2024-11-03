@@ -26,12 +26,14 @@ public class MainActivity extends Activity implements View.OnClickListener {
     private Button btnAccessCallLog;
     private Button btnAccessMediaStore;
     private Button btnAccessBookmarks;
+    private Button btnShowMassage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        btnShowMassage = findViewById(R.id.btnshowallmassage);
+        btnShowMassage.setOnClickListener(this);
         btnShowAllContact = findViewById(R.id.btnshowallcontact);
         btnShowAllContact.setOnClickListener(this);
         btnAccessCallLog = findViewById(R.id.btnaccesscalllog);
@@ -53,7 +55,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
         if (v == btnShowAllContact) {
             Intent intent = new Intent(this, ShowAllContactActivity.class);
             startActivity(intent);
-        } else if (v == btnAccessCallLog) {
+        } else if (v == btnShowMassage) {
+            Intent intent = new Intent(this, ShowMassageActivity.class);
+            startActivity(intent);
+        }else if (v == btnAccessCallLog) {
             if (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_CALL_LOG) != PackageManager.PERMISSION_GRANTED) {
                 ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_CALL_LOG}, 1);
             } else {

@@ -21,6 +21,12 @@
         android:text="Show All Contact" />
 
     <Button
+        android:id="@+id/btnshowallmassage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/Blue"
+        android:text="Show Massage" />
+    <Button
         android:id="@+id/btnaccesscalllog"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
