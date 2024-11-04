@@ -4,16 +4,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ShowMassageActivity" >
+    tools:context=".ShowCallLogActivity" >
     <Button
         android:id="@+id/btnback"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Back" />
     <ListView
+
         android:id="@+id/listView1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:divider="@android:color/darker_gray"
+      android:dividerHeight="1dp"
+
+    android:padding="8dp"
+    android:layout_margin="8dp"
+
+    android:background="@color/cardview_light_background"
+    android:outlineSpotShadowColor="@color/Blue"
+    android:scrollbars="vertical"
+    android:elevation="4dp"    >
     </ListView>
 
 

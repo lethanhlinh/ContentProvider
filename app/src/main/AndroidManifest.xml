@@ -25,6 +25,9 @@
         android:theme="@style/Theme.ContenProvider"
         tools:targetApi="31">
         <activity
+            android:name=".ShowCallLogActivity"
+            android:exported="false" />
+        <activity
             android:name=".ShowMassageActivity"
             android:exported="false" />
         <activity

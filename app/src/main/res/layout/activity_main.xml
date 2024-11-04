@@ -11,6 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/Blue"
+        android:gravity="center"
         android:text="Lê Nguyễn Thành Linh_22115053122121" />
 
     <Button
@@ -18,6 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/Blue"
+        android:textColor="@color/white"
         android:text="Show All Contact" />
 
     <Button
@@ -25,12 +27,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/Blue"
+        android:textColor="@color/white"
         android:text="Show Massage" />
+    <Button
+        android:id="@+id/btnshowcalllog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/Blue"
+        android:textColor="@color/white"
+        android:text="Show Call log" />
     <Button
         android:id="@+id/btnaccesscalllog"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/Blue"
+        android:textColor="@color/white"
         android:text="Access The Call Log" />
 
     <Button
@@ -38,6 +49,7 @@
         android:layout_width="match_parent"
         android:backgroundTint="@color/Blue"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
         android:text="Access Media Store" />
 
     <Button
@@ -45,6 +57,7 @@
         android:layout_width="match_parent"
         android:backgroundTint="@color/Blue"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
         android:text="Access Bookmarks" />
 
 </LinearLayout>
